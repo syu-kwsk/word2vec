@@ -10,6 +10,7 @@ from gensim.models import Word2Vec
 from flask import Flask, jsonify, request
 import nltk
 
+app = Flask(__name__)
 @app.route('/')
 def index():
     return 'Hello World!'
